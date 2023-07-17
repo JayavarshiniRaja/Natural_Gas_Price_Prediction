@@ -1,0 +1,20 @@
+Python Kernel:
+jupyter -1.0.0
+ipykernel - 6.15.2
+ipython -7.31.1
+Data Preprocessing:
+Pandas-1.4.4
+Numpy-1.21.5
+Scipy-1.9.1
+Data Visualization:
+matplotlib -3.5.2
+seaborn- 0.11.2
+ML Model:
+scikit-learn-1.0.2
+Pickle File:
+Joblib-1.1.0
+Framework:
+Flask-1.1.2
+IDE:
+Jupyter Notebook
+Spyder -5
