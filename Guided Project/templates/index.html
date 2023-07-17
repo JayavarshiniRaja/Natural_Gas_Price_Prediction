@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Price Prediction</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <div class="fullBody">
+        <header>
+            <h1>Natural Gas Price Prediction</h1>
+        </header>
+        <div class="myForm">
+            <form action="/predict" method="post" class="inputForm">
+                <h2 id="myLabel">Enter Date to Predict</h3>
+                <div class="inputItems">
+                    <input type="number" min="1" max="31" name="date" id="date" class="date" placeholder="DATE">
+                    <input type="number" min="1" max="12" name="month" id="month" class="month" placeholder="MONTH">
+                    <input type="number" min="1000" max="9999" name="year" id="year" class="year" placeholder="YEAR">
+                </div>
+                <input type="submit" value="Predict" id="predict" class="predict">
+            </form>
+        </div>
+        <h3>{{prediction_text}}</h3>
+    </div> 
+</body>
+</html>
